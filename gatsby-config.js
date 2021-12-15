@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -13,6 +14,15 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
     },
   ],
 };
