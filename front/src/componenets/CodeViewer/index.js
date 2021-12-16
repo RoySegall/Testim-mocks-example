@@ -10,7 +10,7 @@ const CodeViewer = ({language = 'javascript', code, filename}) => {
         <div className="p-2 bg-neutral-600 border-b border-rose-400 text-white font-extralight text-xl">
             <div className={"flex flex-row justify-between align-center"}>
                 {filename}
-                <div className={"flex flex-row"}>
+                <div className={"flex flex-row items-center"}>
                     <div className="bg-red-400 w-4 h-4 rounded-full"> </div>
                     <div className="bg-yellow-400 w-4 h-4 rounded-full mx-1"> </div>
                     <div className="bg-green-400 w-4 h-4 rounded-full"> </div>
