@@ -5,6 +5,5 @@ examples/get-joke/js/config.js
 examples/get-joke/js/node_modules
 
 # PHP
-
 examples/get-joke/php/config.php
 examples/get-joke/php/vendor
