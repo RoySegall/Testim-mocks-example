@@ -1,3 +1,3 @@
-node_modules/
-.cache/
-public
+.idea
+examples/get-joke/js/config.js
+examples/get-joke/js/node_modules

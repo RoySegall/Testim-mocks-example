@@ -1,0 +1,15 @@
+{
+  "name": "testim-dad-joke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sandbox": "nodemon sandbox.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "nodemon": "^2.0.15"
+  }
+}
