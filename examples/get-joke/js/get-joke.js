@@ -15,7 +15,6 @@ function getJoke() {
     return axios.request(options).then(function (response) {
         const {setup, punchline} = response.data.body[0];
         return `Your dad joke is: ${setup} - ${punchline}`
-
     }).catch(e => {
         console.log(e);
     });

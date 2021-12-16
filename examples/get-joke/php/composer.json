@@ -1,0 +1,19 @@
+{
+    "name": "roysegall/testim-get-dad-joke",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "kint-php/kint": "^3.3"
+    },
+    "license": "MIY",
+    "autoload": {
+        "psr-4": {
+            "Roysegall\\TestimGetDadJoke\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RoySegall",
+            "email": "roy@testim.io"
+        }
+    ]
+}
