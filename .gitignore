@@ -7,3 +7,6 @@ examples/get-joke/js/node_modules
 # PHP
 examples/get-joke/php/config.php
 examples/get-joke/php/vendor
+
+.pdm.toml
+__pypackages__/
