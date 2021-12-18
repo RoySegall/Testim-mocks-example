@@ -47,11 +47,25 @@ function getJoke() {
 }
 `;
 
-const IndexPage = () => {
-  return <main className="bg-neutral-100 w-100 h-screen flex flex-row w-screen justify-center items-center">
-    <Helmet title="get-joke" />
-    <CodeViewer codes={{javascript, php}} filename="get-joke" />
-  </main>
-}
+const python = `
+import requests
+from config import key
+
+
+def get_joke():
+    response = requests.get(
+        url="https://dad-jokes.p.rapidapi.com/random/joke",
+        headers={
+            'x-rapidapi-host': 'dad-jokes.p.rapidapi.com',
+            'x-rapidapi-key': key,
+        }
+    ).json()
+
+    joke = response['body'][0]
+
+    return f"Your dad joke is: {joke['setup']} - {joke['punchline']}"
+`
+
+const IndexPage = () => <CodeViewer codes={{javascript, php, python}} filename="get-joke" />;
 
 export default IndexPage
