@@ -8,5 +8,8 @@ examples/get-joke/js/node_modules
 examples/get-joke/php/config.php
 examples/get-joke/php/vendor
 
+
+# Python
+examples/get-joke/python/config.py
 .pdm.toml
 __pypackages__/
