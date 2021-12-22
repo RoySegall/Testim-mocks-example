@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sandbox": "nodemon sandbox.js"
+    "sandbox": "nodemon sandbox.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "jest": "^27.4.5",
     "nodemon": "^2.0.15"
   }
 }

@@ -1,4 +1,4 @@
-const axios = require('axios').default;
+const axios = require('axios');
 const {key} = require('./config.js')
 
 function getJoke() {

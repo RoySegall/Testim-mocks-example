@@ -2,7 +2,7 @@ import * as React from "react";
 import {useCallback, useMemo, useState} from "react";
 import { faPhp, faJs, faPython } from '@fortawesome/free-brands-svg-icons'
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula as codeStyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { vs2015 as codeStyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import LanguagePicker from "./LanguagePicker";
 import Window from "../Window";
 import {Helmet} from "react-helmet";
@@ -30,7 +30,7 @@ const CodeViewer = ({codes, filename}) => {
     return <Window title={`${filename}.${extension[language]}`}>
         <Helmet title={filename} />
         <div className="flex flex-row h-full">
-            <div className="bg-neutral-600 text-white w-2/12 py-4 border-r border-black font-extralight">
+            <div className="bg-neutral-600 text-white w-2/12 h-9 py-4 border-r border-black font-extralight">
                 <ul>
                     <li onClick={() => setLanguage('javascript')} className={`cursor-pointer mx-2 pb-1`}>
                         <div className={getListItemClass('javascript')}><LanguagePicker icon={faJs} title='JavaScript' /></div>
@@ -44,9 +44,13 @@ const CodeViewer = ({codes, filename}) => {
                 </ul>
             </div>
             <div className="w-full pl-2">
-                <SyntaxHighlighter language={language} style={codeStyle}>
-                    {code}
-                </SyntaxHighlighter>
+                <div style={{height: "30em", overflow: "auto"}}>
+                    <SyntaxHighlighter language={language} style={codeStyle}>
+                        {code}
+
+                    </SyntaxHighlighter>
+                </div>
+
             </div>
         </div>
     </Window>

@@ -1,10 +1,8 @@
 import * as React from "react";
-import "../../css/index.scss";
 import CodeViewer from "../../componenets/CodeViewer";
-import {Helmet} from "react-helmet";
 
 const javascript = `
-const axios = require('axios').default;
+const axios = require('axios');
 const {key} = require('./config.js')
 
 function getJoke() {
