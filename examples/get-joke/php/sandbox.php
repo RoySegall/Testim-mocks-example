@@ -1,5 +1,6 @@
 <?php
 
-require_once  "getJoke.php";
+require_once "DadJokeService.php";
 
-Kint::dump(getJoke());
+$dadJokeService = new DadJokeService();
+Kint::dump($dadJokeService->getJoke());

@@ -47,7 +47,6 @@ const CodeViewer = ({codes, filename}) => {
                 <div style={{height: "30em", overflow: "auto"}}>
                     <SyntaxHighlighter language={language} style={codeStyle}>
                         {code}
-
                     </SyntaxHighlighter>
                 </div>
 
